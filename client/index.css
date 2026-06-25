@@ -1,0 +1,93 @@
+/* ----------------------------------------------------------------
+   전역 스타일 + 디자인 토큰
+   컴포넌트별 스타일은 *.module.css 로 분리하고,
+   여기서는 리셋과 공통 변수(색, 간격)만 둔다.
+   ---------------------------------------------------------------- */
+
+/*
+ box-sizing 설정
+*/
+:root {
+  /* 색상 */
+  --color-bg: #f6f7f9;
+  --color-surface: #ffffff;
+  --color-border: #e2e5ea;
+  --color-text: #1f2330;
+  --color-text-muted: #6b7280;
+  --color-primary: #2f6fed;
+  --color-primary-hover: #2559c9;
+  --color-danger: #e5484d;
+  --color-danger-hover: #cc3b40;
+
+  /* 상태 색 */
+  --color-on-sale-bg: #e7f5ec;
+  --color-on-sale-text: #1a7f43;
+  --color-sold-out-bg: #fdeceb;
+  --color-sold-out-text: #c0392b;
+  --color-discontinued-bg: #eceef1;
+  --color-discontinued-text: #6b7280;
+
+  /* 간격 / 모서리 */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --radius: 8px;
+  --shadow: 0 1px 3px rgba(16, 24, 40, 0.08);
+
+  font-family: 'Pretendard', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  color: var(--color-text);
+}
+
+/* 가벼운 리셋 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--color-bg);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 14px;
+}
+
+/* 표 공통 베이스 */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}

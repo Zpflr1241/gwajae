@@ -1,0 +1,34 @@
+# dependencies
+node_modules/
+**/node_modules/
+
+# build output
+dist/
+dist-ssr/
+*.local
+
+# server 파일 기반 저장소 (시드로 자동 재생성됨)
+server/data.json
+
+# 개인 학습 노트 — 깃에 올리지 않음
+STUDY.md
+
+# 아직 원리를 모르는 파일 — 학습 후(STUDY.md C·D 영역 [x] 되면) 다시 추적할 예정
+# 주의: 이 파일들을 빼면 client는 빌드/실행되지 않는 불완전 상태가 됨
+client/src/main.tsx
+client/src/App.tsx
+client/src/index.css
+
+# logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# editor / os
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.sw?
